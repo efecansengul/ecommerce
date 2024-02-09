@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  padding: 1rem;
+  border: 1px dashed;
+  border-radius: 4px;
+  width: 400px;
+  height: 300px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.price :nth-child(2) {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+/* media-queries*/
+
+@media only screen and (min-width: 1260px) and (max-width: 1500px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1262px) {
+  .container {
+    width: 400px;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    width: 700px;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1030px) {
+  .container {
+    width: 660px;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .container {
+    scale: 0.8;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+}

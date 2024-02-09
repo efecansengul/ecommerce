@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 1.5rem;
+  margin-top: 4rem;
+}
+.back {
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+
+  margin-left: 8rem;
+  gap: 1.5rem;
+}
+
+.description > h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.cart {
+  margin-left: 4rem;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.cartdetail {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+.cartdescription {
+  font-size: 0.8rem;
+}
+.cartcalculate {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.cartcalculate > input {
+  width: 50%;
+  text-align: center;
+}
+.cartcalculate > .decrease {
+  cursor: pointer;
+}
+.cartcalculate > .increase {
+  cursor: pointer;
+}
+.localdate {
+  margin-top: 1rem;
+}
+.localdate > span {
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+.ekle {
+  background-color: orange;
+  border: 1px solid gray;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1310px) {
+  .cart {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1115px) {
+  .cart {
+    gap: 5px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .cart {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+  }
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .back {
+    display: none;
+  }
+  .description {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+.input {
+  display: flex;
+  border: 0.24px solid black;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-around;
+}
+.input > input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 610px) {
+  .container > .input {
+    display: none;
+  }
+}

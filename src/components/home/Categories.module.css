@@ -1,0 +1,23 @@
+.container {
+  background-color: powderBlue;
+  border-radius: 6px;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: "flex";
+  flex-direction: column;
+  text-align: center;
+  gap: 10;
+  max-width: 200px;
+  max-height: screen;
+  width: "100%";
+}
+
+@media only screen and (max-width: 610px) {
+  .container {
+    display: none;
+  }
+  .innercontainer {
+    background-color: beige;
+    display: none;
+  }
+}
