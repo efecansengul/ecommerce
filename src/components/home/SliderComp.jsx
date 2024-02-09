@@ -26,7 +26,7 @@ export default function SliderComp() {
                 voluptate nam.
               </div>
             </div>
-            <img src="/image/mac.jpg" alt="macbook" height={400} width={900} />
+            <img src="image/mac.jpg" alt="macbook" height={400} width={900} />
           </div>
         </div>
         <div>
@@ -39,7 +39,7 @@ export default function SliderComp() {
                 voluptate nam.
               </div>
             </div>
-            <img src="/image/iphone.jpg" alt="" width={600} height={400} />
+            <img src="image/iphone.jpg" alt="" width={600} height={400} />
           </div>
         </div>
         <div>
@@ -53,7 +53,7 @@ export default function SliderComp() {
               </div>
             </div>
             <img
-              src="/image/visionpro.jpg"
+              src="image/visionpro.jpg"
               alt=""
               width={800}
               height={400}
